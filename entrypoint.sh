@@ -28,6 +28,7 @@ EXAMPLE_APP+=( --client-secret ${DEX_APP_CLIENT_SECRET:-ZXhhbXBsZS1hcHAtc2VjcmV0
 
 if [[ ! -z "${DEX_APP_DEBUG}" ]]; then
     EXAMPLE_APP+=( --debug )
+    echo ${EXAMPLE_APP[@]}
 fi
 
 exec ${EXAMPLE_APP[@]}
